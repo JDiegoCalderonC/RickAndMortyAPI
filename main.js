@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updatePagination(info) {
-        currentPageSpan.textContent = `Página ${currentPage}`;
-        totalPagesSpan.textContent = `de ${info.pages} páginas`;
+        currentPageSpan.textContent = `${currentPage}`;
+        totalPagesSpan.textContent = ` / ${info.pages}`;
     }
 });

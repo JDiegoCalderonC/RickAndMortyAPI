@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -35,9 +36,45 @@ button {
     cursor: pointer;
 }
 
+/* Agrega estilos en tu archivo de estilo (style.css) */
+/* Agrega estilos en tu archivo de estilo (style.css) */
+
+.character-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto; /* Ajusta el margen para centrar la carta */
+    max-width: 500px; /* Ajusta el ancho máximo de la carta según tus preferencias */
+    width: 100%; /* Ajusta para que ocupe el 100% del ancho máximo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.character-info {
+    text-align: left;
+    border: none;
+}
+
 #characterDetail {
     display: none; /* Ocultar inicialmente */
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 20px;
-    border: 1px solid #ddd;
+}
+
+#pagination {
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    display: flex;
+    margin-top: 20px;
+}
+
+#title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

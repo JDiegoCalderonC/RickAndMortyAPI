@@ -1,12 +1,14 @@
 // display.js
 
 function displayCharacterDetail(characterDetail, character) {
-
     // Extraer números finales de las URLs de los episodios
     const episodeNumbers = character.episode.map(url => url.split('/').pop());
 
     const createdDate = new Date(character.created);
     const formattedCreatedDate = formatDate(createdDate);
+
+    // Verifica si el personaje tiene un valor en la propiedad "type"
+    const typeHTML = character.type ? `<p><strong>Type:</strong> ${character.type}</p>` : '';
 
     characterDetail.innerHTML = `
         <div class="character-card">
@@ -15,7 +17,7 @@ function displayCharacterDetail(characterDetail, character) {
             <div class="character-info">
                 <p><strong>Status:</strong> ${character.status}</p>
                 <p><strong>Species:</strong> ${character.species}</p>
-                <p><strong>Type:</strong> ${character.type}</p>
+                ${typeHTML}
                 <p><strong>Gender:</strong> ${character.gender}</p>
                 <p><strong>Origin:</strong> ${character.origin.name}</p>
                 <p><strong>Location:</strong> ${character.location.name}</p>

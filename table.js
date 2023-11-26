@@ -27,6 +27,7 @@ function populateTable(characterTable, characters, displayCharacterDetail) {
         const row = document.createElement('tr');
         row.setAttribute('data-id', character.id);
         row.innerHTML = `
+            <td>${character.id}</td>
             <td>${character.name}</td>
             <td>${character.status}</td>
             <td>${character.species}</td>

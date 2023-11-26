@@ -9,9 +9,9 @@ h1 {
 }
 
 table {
-    width: 100%;
+    width: 40%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px auto; /* Ajuste del margen para centrar la tabla */
 }
 
 th, td {
@@ -22,10 +22,19 @@ th, td {
 
 th {
     background-color: deepskyblue;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #f5f5f5; /* Color de fondo para filas impares */
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff; /* Color de fondo para filas pares */
 }
 
 tr:hover {
-    background-color: #f5f5f5;
+    background-color: beige; /* Color de fondo al pasar el ratón */
     cursor: pointer;
 }
 
@@ -34,6 +43,27 @@ button {
     margin: 5px;
     padding: 8px;
     cursor: pointer;
+}
+
+/* Establece porcentajes para cada columna */
+#characterTable th:nth-child(1),
+#characterTable td:nth-child(1) {
+    width: 4%;
+}
+
+#characterTable th:nth-child(2),
+#characterTable td:nth-child(2) {
+    width: 22%;
+}
+
+#characterTable th:nth-child(3),
+#characterTable td:nth-child(3) {
+    width: 7%;
+}
+
+#characterTable th:nth-child(4),
+#characterTable td:nth-child(4) {
+    width: 7%;
 }
 
 /* Agrega estilos en tu archivo de estilo (style.css) */

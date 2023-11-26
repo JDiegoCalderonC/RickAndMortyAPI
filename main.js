@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async function () {
     const characterTable = document.getElementById('characterTable');
     const characterDetail = document.getElementById('characterDetail');
     const prevPageButton = document.getElementById('prevPage');
@@ -22,12 +22,15 @@ document.addEventListener('DOMContentLoaded', function () {
     prevPageButton.addEventListener('click', () => changePage('prev'));
     nextPageButton.addEventListener('click', () => changePage('next'));
 
-    getCharacters(currentPage).then(data => {
+    try {
+        const data = await getCharacters(currentPage);
         populateTable(characterTable, data.results, character => {
             displayCharacterDetail(characterDetail, character);
         });
         updatePagination(data.info);
-    });
+    } catch (error) {
+        console.error('Error:', error);
+    }
 
     function changePage(direction) {
         if (direction === 'prev' && currentPage > 1) {

@@ -10,8 +10,9 @@ h1 {
 
 table {
     width: 40%;
+    max-width: 700px;
     border-collapse: collapse;
-    margin: 20px auto; /* Ajuste del margen para centrar la tabla */
+    margin: 20px auto;
 }
 
 th, td {
@@ -38,14 +39,14 @@ tr:hover {
     cursor: pointer;
 }
 
-/* Estilo para los botones de paginación */
+/* Estilo para los botones */
 button {
     margin: 5px;
     padding: 8px;
     cursor: pointer;
 }
 
-/* Establece porcentajes para cada columna */
+/* ´Porcentajes de tamaño para cada columna de la tabla*/
 #characterTable th:nth-child(1),
 #characterTable td:nth-child(1) {
     width: 4%;
@@ -66,16 +67,15 @@ button {
     width: 7%;
 }
 
-/* Agrega estilos en tu archivo de estilo (style.css) */
-/* Agrega estilos en tu archivo de estilo (style.css) */
-
+/* Estilo para la card con la informacion detallada del personaje) */
 .character-card {
     border: 1px solid #ccc;
     border-radius: 50px;
     padding: 20px;
     margin: 20px auto; /* Ajusta el margen para centrar la carta */
-    max-width: 500px; /* Ajusta el ancho máximo de la carta según tus preferencias */
-    width: 100%; /* Ajusta para que ocupe el 100% del ancho máximo */
+    max-width: 500px;
+    min-width: 400px;
+    width: 25%; /* Ajusta para que ocupe el 100% del ancho máximo */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,6 +111,7 @@ button {
 
 #imgBienvenida {
     width: 25%;
+    max-width: 500px;
     display: block; /* Hace que la imagen sea un bloque, permitiendo centrarla horizontalmente */
     margin: auto; /* Centra la imagen horizontalmente */
     margin-bottom: 20px;
@@ -137,6 +138,7 @@ button {
     border-radius: 20px; /* Borde redondeado */
     outline: none; /* Elimina el contorno al hacer clic */
     width: 50%; /* Ajusta el ancho según tus preferencias */
+    max-width: 600px;
     background: url('lupa.png') no-repeat 10px center; /* Ajusta la ruta y la posición del icono */
     background-size: 20px; /* Ajusta el tamaño del icono según tus preferencias */
     padding-left: 40px;

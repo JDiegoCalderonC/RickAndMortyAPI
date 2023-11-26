@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilos -->
     <link rel="stylesheet" href="style.css">
+    <!-- Enlace al ícono del sitio web -->
     <link rel="icon" href="icon.jpg" type="image/jpg">
+    <!-- Título de la página HTML -->
     <title>Rick and Morty Characters</title>
 </head>
 
 <body>
     
+    <!-- Encabezado principal de la página -->
     <h1 id="title">Rick and Morty Characters</h1>
     
+     <!-- Imagen de bienvenida para los usuarios -->
     <img id="imgBienvenida" src="welcome.jpg" alt="Imagen de Bienvenida a la API">
 
+    <!-- Barra de búsqueda -->
     <div id="searchID">
         <input type="text" id="searchInput" placeholder="Buscar personaje por ID">
         <button id="searchButton">Buscar</button> 
     </div>
     
-
+    <!-- Tabla para mostrar información de los personajes -->
     <table id="characterTable">
         
+        <!-- Encabezado de la tabla con nombres de columnas -->
         <thead>
             <tr>
                 <th>ID</th>
@@ -31,6 +39,7 @@
             </tr>
         </thead>
 
+        <!-- Cuerpo de la tabla que se llenará dinámicamente -->
         <tbody>
 
         </tbody>
@@ -38,7 +47,7 @@
     </table>
 
 
-   <!-- Agrega dos botones para la paginación -->
+   <!-- Sección de paginación con botones prev/next e indicadores de página actual y total -->
     <div id="pagination">
         <button id="prevPage">Anterior</button>
         <span id="currentPage">1</span>
@@ -46,16 +55,14 @@
         <button id="nextPage">Siguiente</button> 
     </div>
     
-
+   <!-- Contenedor para desplegar la información detallada sobre un personaje -->
     <div id="characterDetail">
 
     </div>
     
-    
-
-
-    <script src="main.js"></script>
+     <!-- Etiquetas de script para enlazar archivos JavaScript -->
     <script src="api.js"></script>
+    <script src="main.js"></script>
     <script src="table.js"></script>
     <script src="display.js"></script>
 </body>

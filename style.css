@@ -21,7 +21,7 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: deepskyblue;
 }
 
 tr:hover {
@@ -49,6 +49,13 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: box-shadow 0.3s ease-in-out; /* Efecto de transición para la sombra */
+    background-color: #f5f3e7; /* Fondo en tono beige claro */
+}
+
+.character-card:hover {
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
 }
 
 .character-card img {
@@ -68,15 +75,24 @@ button {
     padding: 20px;
 }
 
+#title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#imgBienvenida {
+    width: 25%;
+    display: block; /* Hace que la imagen sea un bloque, permitiendo centrarla horizontalmente */
+    margin: auto; /* Centra la imagen horizontalmente */
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+
 #pagination {
     align-items: center;
     justify-content: center; /* Centra horizontalmente */
     display: flex;
     margin-top: 20px;
-}
-
-#title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #searchID {
@@ -86,6 +102,40 @@ button {
 }
 
 #searchInput {
-    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Borde redondeado */
+    outline: none; /* Elimina el contorno al hacer clic */
+    width: 50%; /* Ajusta el ancho según tus preferencias */
+    background: url('lupa.png') no-repeat 10px center; /* Ajusta la ruta y la posición del icono */
+    background-size: 20px; /* Ajusta el tamaño del icono según tus preferencias */
+    padding-left: 40px;
+}
 
+/* Estilo para el botón de búsqueda (si lo tienes) */
+#searchButton {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Borde redondeado */
+    cursor: pointer;
+    background-color: cornflowerblue; /* Color de fondo */
+    color: white;
+}
+
+/* Pseudo-clase hover para resaltar cuando se pasa el ratón sobre la barra de búsqueda o el botón */
+#searchInput:hover {
+    background-color: beige; /* Color de fondo al pasar el ratón */
+}
+
+#searchButton:hover, #prevPage:hover, #nextPage:hover {
+    background-color: blue; /* Color de fondo al pasar el ratón */
+}
+
+#prevPage, #nextPage {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Borde redondeado */
+    cursor: pointer;
+    background-color: cornflowerblue; /* Color de fondo */
+    color: white;
 }

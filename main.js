@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updatePagination(info) {
-        currentPageSpan.textContent = `${currentPage}`;
-        totalPagesSpan.textContent = ` / ${info.pages}`;
+        currentPageSpan.textContent = `${currentPage} `;
+        totalPagesSpan.textContent = `/ ${info.pages}`;
     }
 
     function searchCharacterById() {

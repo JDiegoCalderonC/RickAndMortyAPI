@@ -41,7 +41,7 @@ button {
 
 .character-card {
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 50px;
     padding: 20px;
     margin: 20px auto; /* Ajusta el margen para centrar la carta */
     max-width: 500px; /* Ajusta el ancho máximo de la carta según tus preferencias */
@@ -53,7 +53,7 @@ button {
 
 .character-card img {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
@@ -77,4 +77,15 @@ button {
 
 #title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#searchID {
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    display: flex;
+}
+
+#searchInput {
+    width: 50%;
+
 }

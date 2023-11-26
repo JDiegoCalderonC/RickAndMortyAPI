@@ -15,13 +15,15 @@ table {
     margin: 20px auto;
 }
 
-th, td {
+td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align: center;
 }
 
 th {
+    border: 1px solid #ddd;
+    padding: 8px;
     background-color: deepskyblue;
     text-align: center;
 }
@@ -55,6 +57,7 @@ button {
 #characterTable th:nth-child(2),
 #characterTable td:nth-child(2) {
     width: 22%;
+    text-align: left;
 }
 
 #characterTable th:nth-child(3),

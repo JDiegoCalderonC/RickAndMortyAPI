@@ -13,7 +13,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('a.png');
+    background-image: url('background.png');
     background-size: 50% auto; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
     background-position: center 80px;

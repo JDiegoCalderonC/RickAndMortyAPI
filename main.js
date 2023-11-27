@@ -23,10 +23,16 @@ document.addEventListener('DOMContentLoaded', async function () {
     
     // Agrega un evento al input de búsqueda.
     searchInput.addEventListener('input', () => {
-        if (!searchInput.value.trim()) {
-            // Limpiar los detalles si el campo de búsqueda está vacío
+        const inputValue = searchInput.value.trim();
+
+        if (isNaN(inputValue)) {
+            // Muestra un mensaje de error si el valor no es un número
+            alert('Solo se permiten números');
+            // Limpia los detalles si el campo de búsqueda no es un número
             characterDetail.innerHTML = '';
             characterDetail.style.display = 'none';
+            // Limpia el campo de búsqueda
+            searchInput.value = '';
         }
     });
 

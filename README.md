@@ -1,6 +1,6 @@
 # Rick And Morty App
 
-Esta es una pequeña aplicación web que utiliza la API pública de Rick and Morty para mostrar información sobre personajes, permitiendo la búsqueda por ID y la navegación entre páginas.
+Esta es una aplicación web que utiliza la API pública de Rick and Morty para mostrar información sobre personajes, permitiendo la búsqueda por ID y la navegación entre páginas.
 
 ## Características Principales
 

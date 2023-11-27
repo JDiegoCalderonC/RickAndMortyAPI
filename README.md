@@ -1,4 +1,4 @@
-# Rick And Morty
+# Rick And Morty App
 
 Esta es una pequeña aplicación web que utiliza la API pública de Rick and Morty para mostrar información sobre personajes, permitiendo la búsqueda por ID y la navegación entre páginas.
 
@@ -40,7 +40,7 @@ Esta es una pequeña aplicación web que utiliza la API pública de Rick and Mor
 
 1. Clona el repositorio en tu máquina local.
    ```bash
-   git clone https://github.com/tuusuario/rick-and-morty-app.git
+   git clone https://github.com/JDiegoCalderonC/RickAndMortyAPI.git
 2. Abre el archivo index.html en tu navegador web.
 3. Explora la lista de personajes, realiza búsquedas por ID y navega entre las páginas.
 

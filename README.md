@@ -46,3 +46,6 @@ Esta es una aplicación web que utiliza la API pública de Rick and Morty para m
 
 ## Agradecimientos
 Rick and Morty API: Agradecimiento para la API pública de Rick and Morty por proporcionar datos divertidos y emocionantes sobre los personajes de la serie.
+
+## Enlace
+https://jdiegocalderonc.github.io/RickAndMortyAPI/
